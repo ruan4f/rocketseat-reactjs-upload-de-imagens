@@ -1,6 +1,6 @@
 import { Box, Button, Stack, useToast } from '@chakra-ui/react';
-import { useForm } from 'react-hook-form';
 import { useState } from 'react';
+import { useForm } from 'react-hook-form';
 import { useMutation, useQueryClient } from 'react-query';
 
 import { api } from '../../services/api';
@@ -72,8 +72,7 @@ export function FormAddImage({ closeModal }: FormAddImageProps): JSX.Element {
     }
   );
 
-  const { register, handleSubmit, reset, formState, setError, trigger } =
-    useForm();
+  const { register, handleSubmit, reset, formState, setError, trigger } = useForm();
 
   const { errors } = formState;
 
